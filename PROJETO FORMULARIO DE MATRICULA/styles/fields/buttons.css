@@ -1,0 +1,47 @@
+button {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-highlight);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  
+    &.btn-primary {
+      width: 100%;
+      text-align: center;
+      transition: 0.2s ease-in-out;
+      color: white;
+      background-color: var(--brand-dark);
+  
+      &:hover,
+      &:focus {
+        background-color: var(--brand-mid);
+      }
+    }
+  
+    &.btn-secondary {
+      width: 100%;
+      text-align: center;
+      border: 1px solid var(--text-highlight);
+  
+      &:hover,
+      &:focus {
+        color: var(--brand-dark);
+        outline: 0.25rem solid var(--surface-secondary);
+      }
+    }
+  }
+  
+  @media (width >= 80rem){
+    button {
+  
+      &.btn-primary{
+        width: unset;
+      }
+  
+      &.btn-secondary {
+        width: unset;
+        margin-left: auto;
+      }
+    }
+  }
